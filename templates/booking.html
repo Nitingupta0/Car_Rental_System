@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+         <!-- Bookings Section -->
+        <div id="booking" class="container my-5">
+            <h2 class="text-center">Book a Car</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="p-4 bg-white shadow rounded">
+                        <form id="bookingForm" class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="carSelect" class="form-label">Select Car</label>
+                                <select class="form-select" id="carSelect" required>
+                                    <option value="">Choose...</option>
+                                    <option value="Chevrolet Camaro" data-price="50">Chevrolet Camaro - $70/day</option>
+                                    <option value="Honda Civic" data-price="55">Honda Civic - $55/day</option>
+                                    <option value="Ford Explorer" data-price="70">Ford Explorer - $70/day</option>
+                                    <option value="Jeep Wrangler" data-price="75">Jeep Wrangler - $105/day</option>
+                                    <option value="Volkswagen Polo" data-price="40">Volkswagen Polo - $45/day</option>
+                                    <option value="Audi A6" data-price="42">Audi A6 - $55/day</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="rentalDays" class="form-label">Rental Days</label>
+                                <input type="number" class="form-control" id="rentalDays" placeholder="Number of days" required>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-primary">Book Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>

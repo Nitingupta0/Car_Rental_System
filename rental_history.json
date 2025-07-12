@@ -1,0 +1,37 @@
+{
+    "query_result": {
+      "stmt": "SELECT Users.name AS user_name, RentalHistory.car_name, RentalHistory.rental_date, RentalHistory.return_date, RentalHistory.price FROM RentalHistory JOIN Users ON RentalHistory.user_id = Users.id;",
+      "header": ["user_name", "car_name", "rental_date", "return_date", "price"],
+      "rows": [
+        ["John Doe", "Toyota Corolla", "2024-02-01", "2024-02-05", "200"],
+        ["Jane Smith", "Honda Civic", "2024-02-10", "2024-02-15", "275"]
+      ]
+    },
+    "rental_history": [
+      {
+        "id": 5,
+        "user_id": 1,
+        "car_name": "Chevrolet Camaro",
+        "rental_date": "2024-02-10",
+        "return_date": "2024-02-15",
+        "price": 350
+      },
+      {
+        "id": 6,
+        "user_id": 2,
+        "car_name": "Honda Civic",
+        "rental_date": "2024-01-20",
+        "return_date": "2024-01-25",
+        "price": 275
+      },
+      {
+        "id": 7,
+        "user_id": 3,
+        "car_name": "Ford Explorer",
+        "rental_date": "2024-03-01",
+        "return_date": "2024-03-10",
+        "price": 700
+      }
+    ]
+  }
+  

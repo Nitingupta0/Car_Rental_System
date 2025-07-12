@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="confirmation-container">
+        <h2>✅ Booking Confirmed!</h2>
+        <p>Thank you, <span id="confirmName"></span>!</p>
+        <p>Your booking for a <strong><span id="confirmCar"></span></strong> is confirmed for <strong><span id="confirmDays"></span></strong> days.</p>
+        <p>Total Cost: <strong>$<span id="confirmPrice"></span></strong></p>
+        <p>Payment Method: <strong><span id="confirmPayment"></span></strong></p>
+        <a href="index.html" class="btn">Back to Home</a>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("confirmName").textContent = localStorage.getItem("bookingName");
+            document.getElementById("confirmCar").textContent = localStorage.getItem("bookingCar");
+            document.getElementById("confirmDays").textContent = localStorage.getItem("bookingDays");
+            document.getElementById("confirmPrice").textContent = localStorage.getItem("bookingPrice");
+            document.getElementById("confirmPayment").textContent = localStorage.getItem("bookingPayment");
+        });
+    </script>
+</body>
+</html>

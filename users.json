@@ -1,0 +1,30 @@
+{
+    "query_result": [
+      {
+        "stmt": "SELECT name, email FROM Users;",
+        "header": ["name", "email"],
+        "rows": [
+          ["John Doe", "john@example.com"],
+          ["Jane Smith", "jane@example.com"]
+        ]
+      }
+    ],
+    "users": [
+      {
+        "id": 5,
+        "name": "John Doe",
+        "email": "john@example.com"
+      },
+      {
+        "id": 6,
+        "name": "Jane Smith",
+        "email": "jane@example.com"
+      },
+      {
+        "id": 7,
+        "name": "Alice Brown",
+        "email": "alice@example.com"
+      }
+    ]
+  }
+  
